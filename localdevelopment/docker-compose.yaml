@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db:
+    image: "postgres"
+    container_name: query-dsl-db
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=db
+      - POSTGRES_PASSWORD=p4ssw0rd
+      - POSTGRES_USER=user
